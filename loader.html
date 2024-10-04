@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)loader.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+    background-color:#000;
+ }
+.emailsma{
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgba(24, 213, 242, 0.911)
+}
+
+
+.image img{
+    border: 5px solid #000;
+    border-radius: 150px;
+    width: 100px;
+    height: 100px;
+}
+
+ 
+.accountD{
+    background: rgb(5, 75, 150);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #fff;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    margin-top:20px ;
+}
+
+.intro{
+    color: white;
+    font-family: monospace;
+}
+
+h5{
+    color: white;
+    font-family: monospace; 
+    margin-left: 10px;
+    font-weight: bolder;   
+}
+
+h6{
+    font-size: 12px;
+    color: white;
+    font-family: monospace; 
+    margin-left: 10px;
+    font-weight: bolder;  
+    text-align: justify; 
+}
+
+p{
+    color: white;
+    font-family: monospace; 
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+
+
+.p{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    outline-style: double;
+    outline-color: #00000;
+    font-family: monospace;
+    font-weight: bolder;
+    width: 90%;
+    margin-top: 40px;
+}
+
+
+
+ img{
+    width: 50px;
+    height: 50px;
+}
+#loading-container {
+              text-align: center;
+          }
+  
+       #loading-button {
+              width: 150px;
+              height: 30px;
+              background-color: black;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+       }
+  
+      #loading-message {
+              display: none;
+       }
+
+</style></head>
+
+
+
+<body>
+    <section class="q">
+        <center>
+    <div class="text">
+        <h6>You will recieve your <span class="emailsma">access-ID</span> via <span class="emailsma">Email</span> and <span class="emailsma">SMS</span> as soon as your payment is comfirmed</h6>
+    </div>
+   
+
+        <div class="image">
+            <img src="./loader_files/image_processing20190924-14569-tu6ube.gif">
+            </div>
+        </center></section>
+
+        <section class="accountD">
+           
+
+                <center>
+                    <div id="loading-container">
+                        <button id="loading-button" onclick="startPaymentConfirmation()">Confirm Payment</button>
+                        <p id="loading-message">Confirming Payment</p>
+                    </div>
+
+                <center>
+                    <br>
+                <div class="valid">
+                    <img src="./loader_files/sorry.jpg">   
+        </div></center></center></section>
+       
+        <script>
+            function startPaymentConfirmation() {
+                const button = document.getElementById('loading-button');
+                const message = document.getElementById('loading-message');
+          
+                // Show the "Confirming Payment" message at the bottom of the button
+                message.style.display = 'block';
+                message.textContent = 'Checking for payment';
+          
+                // Simulate a delay of 15 seconds for each status message
+                setTimeout(() => {
+                    message.textContent = 'confirming payment';
+                    setTimeout(() => {
+                        message.textContent = 'No payment detected,Pay Now';
+                        setTimeout(() => {
+                            // Display "Payment not detected" message after 7 seconds in total
+                            message.textContent = 'Payment not detected';
+                            message.style.color = 'red';
+                        }, 15000);
+                    }, 7000);
+                }, 8000);
+            }
+          </script> 
+
+</body></html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)validation.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ *{
+    margin: 0 auto;
+ }
+
+ body{
+    background-color: #000000;
+ }
+ 
+ form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(24, 129, 242);
+    padding-bottom: 5%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+ } 
+
+ .charset p{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: #000;
+    border-bottom-left-radius: 20px;
+}
+
+.charset a{
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ 
+ input{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 1px 0px, 1px -3px black;
+ }
+
+::placeholder{
+    color: rgb(24, 129, 242);
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+header button{
+    color: white;
+    margin-top: 20px;
+    background-color: black;
+    width: 40%;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+}
+
+header a :hover{
+    color: black;
+    margin-top: 20px;
+    font-weight: bolder;
+    border: none;
+    background-color: white; 
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px #fff;
+    height: 30px;
+}
+
+</style></head>
+
+<body>
+   
+
+    <section class="validation">
+        <header>
+        <form action="recieved.html" method="get">
+            <div class="charset">
+                <p> Paste your access-ID to proceed with this withdrawal<br>Don't have an access-ID? <a href="accessid.html">click here</a></p>
+            </div>
+            <center>
+                <input id="id1" type="password" pattern="USER@EASYCHASHOUT2024PRO" placeholder="access - ID" required="" oninvalid="this.setCustomValidity(&#39;This access-ID is invalid! Purchase an access-ID  or Subscribe to Premium to get a valid access-ID registered on our WEB API from the app and try again later!&#39;)">
+               
+                <a href="go:recieved"> 
+                <button>Validate</button><br>
+        
+    </a>
+    
+    </center></form></header>
+
+   
+
+    <script>
+        function myFunction() {
+          const inpObj = document.getElementById("id1");
+          if (!inpObj.checkValidity()) {
+            document.getElementById("demo").innerHTML = inpObj.validationMessage;
+          } else {
+            document.getElementById("demo").innerHTML = "Input OK";
+          } 
+        } 
+        </script>
+        
+
+
+
+
+
+
+
+</section></body></html>

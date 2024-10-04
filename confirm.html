@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)confirm.html?name=login_files&number=13432232&bank=Diamond+Bank -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+Body{
+Background-color: #000;
+}
+
+        .confirmation{
+    background-color: #ffc728;
+    max-width: 85%;
+    padding: 20px;
+    margin-top: 2%;
+    border-radius: 20px;
+    margin-top: 7%;
+ }
+
+ .confirmation p{
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 25px;
+ }
+
+ .confirmation h6{
+    font-weight: normal;
+    font-size: small;
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+ }
+
+ button{
+    color: #ffff;
+    background-color: red;
+    width: 92%;
+    height: 40px;
+    Border-radius:10px;
+    Font-weight: bolder;
+    border: none;
+    outline: none;
+    
+}
+
+button:hover{
+    color: #ffff;
+    background-color: rgb(245, 74, 74);
+    width: 88%;
+    height: 40px;
+    Border-radius:10px;
+    Font-weight: bolder;
+    border: none;
+    outline: none;
+}
+
+label{
+    color: red;
+   text-align: justify;
+   position: relative;
+    bottom:  20px;
+    margin-right: 48%;
+ }
+
+ .qa{
+    
+    color: #fff;
+    background-color: #000;
+    border-radius: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: x-small; 
+    position: relative;
+    bottom: 2px;
+ }
+
+#RES{
+    font-weight: bolder;
+    font-size: small;
+   
+}
+
+.submit{
+    background-color: #000;
+   border-radius: 20px;
+   margin-top: 10%;
+   padding-top: 3%;
+   padding-bottom: 3%;
+}
+    </style>
+</head>
+<body>
+ 
+    <div class="confirmation"> 
+        
+        <p>Confirm Your Details <span class="qa">!</span> </p>
+        <h6>Review your account informations before <br>proceeding with this withdrawal!</h6>
+        
+     <h5 id="RES">Account Name : login_files<br><br><br>Account Number : 13432232<br><br><br>Bank Name: Diamond Bank</h5>
+
+     <div class="submit">
+        <center>
+        <a id="submit-btn" href="validation.html"><button>Confirm &amp; Proceed</button></a>
+    </center></div>
+    </div>
+    <br>
+    
+  
+
+    <script>
+        var data = window.location.search;
+        var params = new URLSearchParams(data);
+        console.log(params);
+        var name = params.get("name");
+        var number = params.get("number");
+        var bank = params.get("bank");    
+        var  getData = "Account Name : "+name+"<br><br><br>";
+            getData += "Account Number : "+number+"<br><br><br>";
+            getData += "Bank Name: "+bank;
+        document.getElementById("RES").innerHTML = getData;
+    </script>
+
+</body></html>

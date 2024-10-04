@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ *{
+    margin: 0 auto;
+ }
+
+ body{
+    background-color: #000000;
+ }
+ 
+ form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(24, 129, 242);
+    padding-bottom: 5%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+ } 
+
+
+ .charset p{
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    text-align: justify;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+  
+
+
+ 
+ input{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 1px 0px, 1px -3px black;
+ }
+
+::placeholder{
+    color: rgb(24, 129, 242);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+header button{
+    color: white;
+    margin-top: 20px;
+    background-color: black;
+    width: 40%;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+}
+
+header a :hover{
+    color: black;
+    margin-top: 20px;
+    font-weight: bolder;
+    border: none;
+    background-color: white; 
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px #fff;
+    height: 30px;
+}
+
+.p{
+    font-size: small;
+    padding-left: -10px;
+    padding-right: -10px;
+}
+
+
+
+footer p{
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    background-color: black;
+    border-top-right-radius: 20px;
+    border-top-left-radius:20px ;
+    font-family: calibri;
+    text-align: left;
+    padding-left: 6.9%;
+    padding-bottom: 20px;
+   
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+
+footer a :hover{
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius:20px ;
+    font-family: calibri;
+    text-align: left;
+    padding-left: 6%;
+    padding-bottom: 20px;
+   text-decoration: none;
+}
+/* button discription */
+h6{
+    color: rgb(207, 140, 15);
+    text-align: left;
+    padding-left: 25px;
+    position: relative;
+    bottom: 15px;
+    font-weight: 400;
+    padding-top: 0;
+
+      
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(24, 129, 242);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-top: 20px;
+    
+}
+
+
+
+
+
+marquee{
+    text-shadow: 0.5px 0.5px #fff;
+    font-size: small;
+    color: rgb(24, 129, 242);
+    background: #000000;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius:20px ;
+    position: relative;
+    top: 5px;
+    padding-bottom: 4%;
+}
+
+</style></head>
+
+<body>
+    <center>
+
+    <section class="validation">
+        <header>
+        <form action="recieved.html" method="get">
+            <div class="charset">
+                <p>Purchase your access-ID by tapping on "Get access-ID" or by Subscribing to Premium for a flexible withdrawal</p>
+            </div>
+            <input id="id1" type="password" pattern="Easy_Moniee@%20%45io" placeholder="access - ID" required="" oninvalid="this.setCustomValidity(&#39;This access-ID is invalid! Purchase an access-ID  or Subscribe to Premium to get a valid access-ID registered on our WEB API from the app and try again later!&#39;)">
+       <a href="recieved.html"> 
+                <button onclick="myFunction()">Validate</button><br>
+        
+    </a>
+    </form>
+    </header>
+
+    <footer>
+        
+      <div class="getaccess">
+        <a href="user.html">
+        <p id="get">Get access-ID</p>
+        </a>
+        <h6>Click here to get your access-ID </h6>
+        </div>
+        
+        <div class="Subscribe">
+        <a href="premium.html">
+            <p>Subscribe to premium</p>
+        </a>
+        <h6>Subscribe to premium and get one month withdrawal access-ID</h6>
+       </div>
+       
+       <div class="marquee">
+            <marquee behavour="scroll" direction="left" scrollamount="3">Get your access-ID directly from the application. You can subscribe to premium to gain one month free access to withdraw</marquee>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+          const inpObj = document.getElementById("id1");
+          if (!inpObj.checkValidity()) {
+            document.getElementById("demo").innerHTML = inpObj.validationMessage;
+          } else {
+            document.getElementById("demo").innerHTML = "Input OK";
+          } 
+        } 
+        </script>
+        
+
+
+
+
+
+
+
+</section></center></body></html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)FRON.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HTML form</title>
+<script src="./FRON_files/jquery.min.js.download"></script>
+<style>
+    *{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+    }
+
+Body{
+Background-color: #000;
+}
+
+.top{
+    background: rgb(24, 129, 242);
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px black;
+    padding-bottom: 5px;
+    padding-top:5px;
+    margin-top:1px ;
+    padding-left: 5px;
+}
+
+.word{
+    background-color: #000;
+    margin-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px;
+}
+
+.content{
+    background: rgb(24, 129, 242);
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 30px;
+}
+
+h5{
+    color: #fff;
+    
+}
+
+.a{
+    color: rgb(24, 129, 242);
+}
+
+
+p{
+    color: #fff;
+    position: relative;
+    top: 5px;
+    font-size: 
+    font-weight bolder;
+}
+
+h6{
+    color: #fff;
+    position: relative;
+    bottom: 18px;
+    margin-bottom: 0%;
+    font-weight: normal;
+    font-size: x-small;
+}
+.outline{
+  background-color: #000;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 3%;
+  border-radius: 20px;
+}
+
+Input{
+Color: #000;
+background-color: #fff;
+Font-size:15px;
+Font-weight: bolder;
+border: 3px solid #000;
+Border-radius:10px;
+height: 35px;
+width: 90%;
+margin-top: 5%;
+outline-style: none;
+}
+
+input:hover{
+    box-shadow: 2px 2px 1px  #ffc728;
+}
+::placeholder{
+    color:  #000;
+}
+
+
+.input :hover{
+    background-color: aquamarine;
+}
+
+select{
+    Color: #000;
+Font-size:15px;
+Font-weight: bolder;
+border: 3px solid #000;
+Background-color: #fff;
+Border-radius:10px;
+height: 40px;
+margin-top: 20px;
+width: 92%;
+outline-color: #000;
+outline: none;
+}
+
+select:hover{
+    box-shadow: 2px 2px 1px #ffc728;
+}
+
+
+button{
+    color: #ffff;
+    background-color: red;
+    width: 92%;
+    height: 40px;
+    Border-radius:10px;
+    Font-weight: bolder;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+}
+
+button:hover{
+    color: #ffff;
+    background-color: rgb(245, 74, 74);
+    width: 92%;
+    height: 40px;
+    Border-radius:10px;
+    Font-weight: bolder;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+}
+
+
+ 
+
+ label{
+    color: red;
+   text-align: justify;
+   position: relative;
+    bottom:  20px;
+    margin-right: 48%;
+ }
+
+ #AN{
+    color: red;
+   text-align: justify;
+   position: relative;
+    bottom:  20px;
+    margin-right: 50%;
+ }
+
+ #selectop{
+  position: relative;
+  right: 18px;
+}
+ .q{
+    color: #fff;
+    background-color: red;
+    border-radius: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: x-small;
+    position: relative;
+    bottom: 1px;
+    
+ }
+ .qa{
+    
+    color: #fff;
+    background-color: #000;
+    border-radius: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: x-small; 
+    position: relative;
+    bottom: 2px;
+ }
+
+ .cd{
+   
+  background-color: #000;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  border-radius: 20px;
+ } 
+</style></head>
+
+
+
+
+
+<body>
+  <section class="top">
+    <div class="word">
+        <h5>Input your account details below begining with your <span class="a">Account Name, Account Number</span> and <span class="a">Bank Name</span> respectively to proceed with your withdrawal. Kindly ensure that your account details are correctly inputted! </h5>
+        </div>
+</section>
+<section class="content">
+    <div class="outline">
+    <form action="confirm.html" onsubmit="myFunction()">
+       
+       
+ <center>
+    <p>Withdrawal Portal</p>
+    <h6>Recievers Details</h6>
+
+<input type="text" name="name" value="" placeholder="Input your account name" required="">
+<br>
+
+
+<input type="number" name="number" value="" placeholder="Input your account number" maxlength="10" minlength="10" required="">
+<br>
+
+<select class="select" name="bank" value="" required="">
+    <option value="">Select Bank</option>
+    
+    <option value="Absa SA">Absa SA
+    </option>
+    <option value="African Bank Limited">African Bank Limited
+    </option>
+    <option value="ASO Saving and Loan">ASO Saving and Loan
+    </option>
+    <option value="Access Bank PLC">Access Bank PLC
+    </option>
+    <option value="Asset Matrix MFB">Asset Matrix MFB
+    </option>
+    <option value="Bank of America">Bank of America
+    </option>
+    <option value="Bank of India">Bank of India
+    </option>
+    <option value="Capital One">Capital One
+    </option>
+    <option value="Capitec Bank">Capitec Bank
+    </option>
+    <option value="Citi bank">Citi bank
+    </option>
+    <option value="Chase Bank">Chase Bank
+    </option>
+    <option value="Diamond Bank">Diamond Bank
+    </option>
+    <option value="Eco Bank PLC">Eco Bank PLC
+    </option>
+    <option value="Enterprise Bank">Enterprise Bank
+    </option>
+    <option value="Eyowo MFB Bank">Eyowo MFB Bank
+    </option>
+    <option value="First Monie Wallet">First Monie Wallet 
+    </option>
+    <option value="First Rand Bank">First Rand Bank
+    </option>
+    <option value="Fidelity Bank">Fidelity Bank
+    </option>
+    <option value="First Bank of Nigeria">First Bank of Nigeria
+    </option>
+    <option value="First City Monument Bank">First City Monument Bank
+    </option>
+    <option value="GTBank">GTBank
+    </option>
+    <option value="ICICI Bank">ICICI Bank
+    </option>
+    <option value="Induslnd Bank">Induslnd Bank
+    </option>
+    <option value="Investec">Investec
+    </option>
+    <option value="Habib Bank Limited">Habib Bank Limited
+    </option>
+    <option value="Heritage Banking">Heritage Banking
+    </option>
+    <option value="Keystone Bank">Keystone Bank
+    </option>
+    <option value="Kuda MFB">Kuda MFB
+    </option>
+    <option value="MOMO">MOMO
+    </option>
+    <option value="MONIE POINT">MONIE POINT
+    </option>
+    <option value="National Bank of Pakistan">National Bank of Pakistan
+    </option>
+    <option value="Nedbank">Nedbank
+    </option>
+    <option value="Opay(PAYCOM)">Opay(PAYCOM) 
+    </option>
+    <option value="PAGA">PAGA
+    </option>
+    <option value="Palmpay">Palmpay 
+    </option>
+    <option value="Parkway Bank">Parkway Bank
+    </option>
+    <option value="PNC Bank">PNC Bank
+    </option>
+    <option value="Polaris Bank">Polaris Bank
+    </option>
+    <option value="Providus Bank">Providus Bank
+    </option>
+    <option value="Rubies MFB">Rubies MFB
+    </option>
+    <option value="Stanbic IBTC Bank">Stanbic IBTC Bank
+    </option>
+    <option value="Standard Charterted Bank">Standard Charterted Bank
+    </option>
+    <option value="Sterling Bank">Sterling Bank
+    </option>
+    <option value="State Bank of India">State Bank of India
+    </option>
+    <option value="TD Bank">TD Bank
+    </option>
+    <option value="Truist">Truist 
+    </option>
+    <option value="United Bank of Africa">United Bank of Africa</option>
+    <option value="United Bank Limited">United Bank Limited
+    </option>
+    <option value="Unity Bank Plc">Unity Bank Plc</option>
+    <option value="U.S Bank">U.S Bank
+    </option>
+    <option value="WEMA Bank">WEMA Bank
+    </option>
+    <option value="Yes Bank">Yes Bank
+    </option>
+    <option value="Zenith Bank Plc">Zenith Bank Plc
+    </option>
+    </select>
+</center></form></div>
+  <br>
+<center>  
+    <div class="cd">
+    <a id="submit-btn" href="confirm.html"><button>Submit</button></a>
+</div>
+
+
+</center></section></body></html>
